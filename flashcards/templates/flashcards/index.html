@@ -1,0 +1,9 @@
+{% if flashcards %}
+<ul>
+    {% for fcard in flashcards %}
+    <li><a href="{% url 'flashcards:detail' fcard.id %}">{{ fcard.front }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No flashcards are available.</p>
+{% endif %}
