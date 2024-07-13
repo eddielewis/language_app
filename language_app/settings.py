@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+MEDIA_ROOT = '/home/ed/Projects/language_app/'
+MEDIA_URL = '/media/'
+
 
 # Application definition
 
@@ -38,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'flashcards.apps.FlashcardsConfig'
+    'flashcards.apps.FlashcardsConfig',
+    'highlights.apps.HighlightsConfig',
 ]
 
 MIDDLEWARE = [

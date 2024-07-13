@@ -22,5 +22,6 @@ from language_app import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.home, name="home"),
-    path("flashcards", include("flashcards.urls")),
+    path("flashcards/", include("flashcards.urls")),
+    path("highlights/", include("highlights.urls")),
 ]
