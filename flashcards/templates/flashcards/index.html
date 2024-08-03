@@ -1,9 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+Flashcards
+{% endblock %}
+
+{% block content %}
+
 {% if flashcards %}
-<ul>
-    {% for fcard in flashcards %}
-    <li><a href="{% url 'flashcards:detail' fcard.id %}">{{ fcard.front }}</a></li>
-    {% endfor %}
-</ul>
+{% for fcard in flashcards %}
+<div class="flashcard">
+    <a href="{% url 'flashcards:detail' fcard.id %}">{{ fcard.front }}</a>
+</div>
+{% endfor %}
+
 {% else %}
 <p>No flashcards are available.</p>
 {% endif %}
+{% endblock %}

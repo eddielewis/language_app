@@ -1,5 +1,13 @@
+{% extends "master.html" %}
+
+{% block title %}
+Upload Kobo DB
+{% endblock %}
+
+{% block content %}
 <form action="{% url 'highlights:process_upload' %}" method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit">
 </form>
+{% endblock %}

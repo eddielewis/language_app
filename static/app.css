@@ -1,0 +1,32 @@
+/* body {
+    margin: 0;
+
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.topnav {
+    background-color: #f8f8f8;
+    overflow: hidden;
+    border-bottom: 2px solid #17a01c;
+
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+*/
+
+.active {
+    background-color: #013f03 !important;
+}
+
+.nav-link {
+    color: #013f03;
+}
+
+main {
+    margin: 0 4rem;
+}
