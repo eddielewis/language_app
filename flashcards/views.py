@@ -2,9 +2,11 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 
 from .models import Flashcard
 
+@login_required
 def index(request):
     """ flashcards = Flashcard.objects.all()
     template = loader.get_template("flashcards/index.html")
